@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Library App</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">READZ</h1>
+    </header>
+
+    <main class="main">
+        <section class="summary">
+            <div class="books">
+                <h2>Books in Library: <span class="totalBooks">0</span></h2>
+            </div>
+            <div class="books">
+                <h2>Read: <span class="readBooks">0</span></h2>
+            </div>
+            <div class="books">
+                <h2>To be read: <span class="toBeRead">0</span></h2>
+            </div>
+        </section>
+        <div class="addBook">
+            <button class="addBtn">+</button>
+            <p>Add Book</p>
+        </div>
+        <section class="shelf"></section>
+    </main>
+
+    <main class="modal">
+        <div class="modalContainer">
+        <form action="#" id="form" method="post">
+            <h2 class="formHeader">Enter Book Details</h2>
+            <div class="formSeparator">
+                <input type="text" name="title" id="title" placeholder="Title" maxlength="100" required>
+                <input type="text" name="author" id="author" placeholder="Author" autocomplete="off" maxlength="100" required>
+                <input type="number" name="pages" id="pages" placeholder="Pages" required>
+                <label for="read">Have you read the book?<span class="checkBox"><input type="checkbox" id="read" name="read"></span></label>
+            </div>
+            <button class="btn submitBtn" type="submit" form="form">Submit</button>
+        </form>
+        <button class="close">&times</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+       <p class="footText">sum 2022</p> 
+    </footer>
+</body>
+</html>
