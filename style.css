@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Inter&family=Poppins&family=Quicksand:wght@400;700&family=Roboto&display=swap');
 :root{
     --clr-body:#4e211f; 
     --clr-header:#2c1112;
@@ -22,6 +23,7 @@ body{
     padding: 0 1.5rem;
     background-color:  var(--clr-body);
     color: var(--clr-large-font);
+    font-family: 'Quicksand',Arial, Helvetica, sans-serif;
 }
 
 header{
