@@ -29,6 +29,7 @@ header{
     align-items: center;
     justify-content: center;
     background-color: var(--clr-header);
+    font-size: 2rem;
     height: 10vh;
     width: 100vw;
 }
@@ -146,6 +147,10 @@ header{
             border-radius: 3px;
         }
 
+        input[type="text"]:focus, input[type="number"]:focus{
+            border: 2px solid lawngreen;
+        }
+
         input[type="checkbox"]{
             font-size: 2rem;
         }
@@ -183,6 +188,7 @@ header{
 
 
         .btn{
+            border: none;
             background-color: crimson ;
             width: 100%;
             height: 3rem;

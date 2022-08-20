@@ -42,6 +42,18 @@ function displayBooks(){
     }
     
     totalBooks.textContent = library.length
+    
+    const rbooks = library.reduce((booksRead, currentBook) =>{
+    
+        if(currentBook.readStatus) {
+            booksRead+=1
+        }
+        return booksRead
+    },0)
+
+    readBooks.textContent = rbooks
+    toBeRead.textContent = library.length - rbooks
+    
     const bookIndex = document.querySelectorAll('.close.card')
     bookIndex.forEach(index => index.addEventListener('click', removeBook))
 
@@ -86,12 +98,13 @@ function getForm(event){
 }
 
 
-const submit = document.querySelector('#form')
-    submit.addEventListener('submit', getForm)
+const form = document.querySelector('#form')
+    form.addEventListener('submit', getForm)
 
 const addButton = document.querySelector('.addBtn')
 const modal = document.querySelector('.modal')
 addButton.addEventListener('click', ()=> {
+    form.reset()
     modal.style.display = "flex"
     const closeModal = document.querySelector('.close')
     closeModal.addEventListener('click', () => {
