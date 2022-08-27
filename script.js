@@ -1,16 +1,17 @@
+class Book {
+    constructor(title, author, pages, readStatus){
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.readStatus = readStatus
+    }
+}
+
 let library = []
 const shelf = document.querySelector('.shelf')
 const totalBooks = document.querySelector('.totalBooks')
 const readBooks = document.querySelector('.readBooks')
 const toBeRead = document.querySelector('.toBeRead')
-
-function Book(title, author, pages, readStatus){
-    // constructor
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.readStatus = readStatus
-}
 
 function addToLibrary(book){
     library.push(book)
